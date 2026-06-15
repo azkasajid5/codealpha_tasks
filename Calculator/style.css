@@ -1,79 +1,128 @@
 body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ffe6f0, #fff5f8);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff0f5;
+  color: #333;
+  line-height: 1.6;
 }
 
-.calculator {
-    width: 320px;
-    padding: 20px;
-    border-radius: 20px;
-    background: #ffd6e7;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+header {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(135deg, #ffb6d5, #ffd6e7);
 }
 
-#display {
-    width: 100%;
-    height: 60px;
-    border: none;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    font-size: 28px;
-    text-align: right;
-    padding: 0 15px;
-    box-sizing: border-box;
-    background: white;
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+section {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #ff69b4;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 8px 0;
+}
+
+a i {
+    color: black;   /* makes icons black too */
+    margin-right: 8px;
+}
+
+a:hover {
     color: #444;
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+a:hover i {
+    color: #444;
+}
+
+.contact-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+}
+
+.contact-links i {
+    color: black;
+    margin-right: 8px;
+}
+
+.contact-links a:hover {
+    color: #444;
+}
+
+.contact-links a:hover i {
+    color: #444;
+}
+
+.tools-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tool {
+    display: flex;
+    align-items: center;
     gap: 10px;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-button {
-    height: 60px;
-    border: none;
-    border-radius: 12px;
-    font-size: 20px;
-    cursor: pointer;
-    background: #ffb6d5;
-    color: #333;
-    transition: all 0.3s ease;
+.tool img {
+    width: 40px;
+    height: 40px;
 }
 
-button:hover {
-    background: #ff9fc8;
-    transform: scale(1.05);
+.tool span {
+    font-size: 16px;
+    font-weight: bold;
 }
 
-/* Operator buttons */
-button:nth-child(2),
-button:nth-child(3),
-button:nth-child(4),
-button:nth-child(8),
-button:nth-child(12),
-button:nth-child(16),
-button:nth-child(20) {
-    background: #ff8fbd;
-    color: white;
+.live-demo {
+    font-size: 13px;
+    font-weight: normal;
+    color: #666;
+    text-decoration: none;
 }
 
-button:nth-child(2):hover,
-button:nth-child(3):hover,
-button:nth-child(4):hover,
-button:nth-child(8):hover,
-button:nth-child(12):hover,
-button:nth-child(16):hover,
-button:nth-child(20):hover {
-    background: #ff76ad;
+.live-demo:hover {
+    color: #ff4fa3;
+    text-decoration: underline;
 }
 
-.zero {
-    grid-column: span 2;
+
+footer {
+    text-align: left;
+    color:black
+    padding: 20px;
+    margin-top: 20px;
+    font-weight: bold;
 }
