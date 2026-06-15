@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>My Image Gallery</h1>
+
+    <div class="filter-buttons">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('logo')">Logos</button>
+        <button onclick="filterImages('website')">Websites</button>
+        <button onclick="filterImages('poster')">Posters</button>
+    </div>
+
+    <div class="gallery">
+
+        <div class="image logo">
+            <img src="images/logo1.png" alt="">
+        </div>
+
+        <div class="image logo">
+            <img src="images/logo2.png" alt="">
+        </div>
+
+        <div class="image logo">
+            <img src="images/logo3.png" alt="">
+        </div>
+
+        <div class="image logo">
+            <img src="images/logo4.png" alt="">
+        </div>
+
+        <div class="image logo">
+            <img src="images/logo5.png" alt="">
+        </div>
+
+        <div class="image logo">
+            <img src="images/logo6.png" alt="">
+        </div>
+
+        <div class="image website">
+            <img src="images/website1.jpeg" alt="">
+        </div>
+
+        <div class="image website">
+            <img src="images/website2.jpeg" alt="">
+        </div>
+
+        <div class="image website">
+            <img src="images/website3.jpeg" alt="">
+        </div>
+
+        <div class="image website">
+            <img src="images/website4.jpeg" alt="">
+        </div>
+
+        <div class="image website">
+            <img src="images/website5.jpeg" alt="">
+        </div>
+
+        <div class="image website">
+            <img src="images/website6.jpeg" alt="">
+        </div>
+
+        <div class="image poster">
+            <img src="images/poster1.jpeg" alt="">
+        </div> 
+
+        <div class="image poster">
+            <img src="images/poster2.jpeg" alt="">
+        </div> 
+    </div>
+
+    <div id="lightbox">
+        <span class="close">&times;</span>
+
+        <button id="prev">&#10094;</button>
+
+        <img id="lightbox-img">
+
+        <button id="next">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
